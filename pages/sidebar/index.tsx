@@ -5,8 +5,12 @@ import Image from "next/image";
 import control from "../images/control.png";
 import logo from "../images/stockhub-logo.png"
 import newLogo from "../images/StockHub-logos_transparent.png"
+import HomePage from "../home";
+import Link from "next/link";
+import "../sidebar/sidebar.css"
 
-const Sidebar = () => {
+
+const Sidebar = ({ isOpen }) => {
   const [open, setOpen] = useState(true);
   const Menus = [
     { title: "Dashboard", src: "Chart_fill" },
@@ -20,11 +24,11 @@ const Sidebar = () => {
   ];
 
   return (
-    <div className=" flex">
+    <div className="flex ">
       <div
         className={` ${
           open ? "w-60" : "w-5"
-        } bg-dark-purple h-screen p-5  pt-8 relative duration-300`}
+        } sidebar bg-dark-purple h-screen p-5  pt-8 relative duration-300 sidebar`}
       >
         <Image
           src={control}
@@ -47,6 +51,22 @@ const Sidebar = () => {
             Designer
           </h1>
         </div>
+        <ul className="pt-6 link ">
+          <li className="flex  rounded-md p-2 cursor-pointer hover:bg-light-white text-gray-900 text-sm items-center gap-x-4 ">
+            <Image src={control} />
+            <Link href="/home">
+              <span
+                className={`${
+                  !open && "hidden"
+                } heading origin-left duration-200  text-indigo-500 `}
+              >
+                {" "}
+                Home Component
+              </span>
+            </Link>
+          </li>
+        </ul>
+        <hr />
         <ul className="pt-6">
           {Menus.map((Menu, index) => (
             <li
@@ -73,9 +93,10 @@ const Sidebar = () => {
           </li>
         </ul>
       </div>
-      <div className="h-screen flex-1 p-7">
-        <h1 className="text-2xl font-semibold ">Home Page</h1>
-      </div>
+      {/* <div className="h-screen flex-1 p-7">
+        <h1 className="text-2xl font-semibold ">Stock Hub </h1>
+        <small>Buy Low Sell High</small>
+      </div> */}
     </div>
   );
 };
