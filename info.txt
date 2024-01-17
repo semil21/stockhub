@@ -1,0 +1,22 @@
+ powershell -ExecutionPolicy Bypass -Command "npm run dev"
+ api key = RNN104K0LB0IQCAI ,  CXYVVQRRRR73LIAY
+ Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
+ powershell -ExecutionPolicy Bypass -Command "npm install"
+
+ https://tw-elements.com/docs/standard/components/jumbotron/
+ 
+ 
+news api https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=fbc19217baa34606ac37889ca5fe55ee
+
+news api key - fbc19217baa34606ac37889ca5fe55ee
+
+ 1 - Alpha Vantage : 25 req a day
+2 - Marketstack : 1000 req a month
+3 - Financial Modeling Prep : 250 req a day 
+4 - Finnhub : 60 requests a minute [ not many data ]
+5 - Tiingo :  Max Requests Per Hour 50
+              Max Requests Per Day 1000
+              Unique Symbols per Month 500
+
+6- Alpaca : calls 200/min	
+
