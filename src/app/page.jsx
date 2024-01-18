@@ -184,9 +184,6 @@ const Home = async () => {
                 }}
               >
                 <div className="text-gray-700 flex-grow">
-                  {/* <h2 className="text-gray-800 font-bold text-2xl text-center my-1 ">
-                    {market.region}
-                  </h2> */}
                   <p className="text-base">
                     <span className="font-bold text-white">
                       {' '}
