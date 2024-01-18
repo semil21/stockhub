@@ -14,7 +14,7 @@ const Trendings = async () => {
   return (
     <>
       <span className="font-bold text-4xl text-center text-green-500">
-        Today's Top Gainers
+        Today&rsquo;s Top Gainers
       </span>
       <div className="p-5 min-h-5">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
@@ -96,7 +96,7 @@ const Trendings = async () => {
       </div>
 
       <span className="font-bold text-4xl text-center text-red-500">
-        Today's Top Losers
+        Today&rsquo;s Top Losers
       </span>
 
       <div className="p-5 min-h-screen">
