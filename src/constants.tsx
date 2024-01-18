@@ -14,11 +14,7 @@ export const SIDENAV_ITEMS: SideNavItem[] = [
     path: '/trending',
     icon: <Icon icon="icon-park-twotone:trend-two" width="24" height="24" />,
   },
-  // {
-  //   title: 'Trending - 1',
-  //   path: '/trendings',
-  //   icon: <Icon icon="icon-park-twotone:trend-two" width="24" height="24" />,
-  // },
+
   {
     title: 'Search',
     path: '/search',
