@@ -1,9 +1,5 @@
 import '../styles/style.css';
 
-import { useEffect } from 'react';
-
-import Link from 'next/link';
-
 const getPosts = async () => {
   const data = await fetch(
     'https://www.alphavantage.co/query?function=MARKET_STATUS&apikey=demo',
@@ -53,7 +49,7 @@ const Home = async () => {
 
       <div className="p-5 min-h-screen">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-          {posts.markets.map((market, index) => (
+          {posts.markets.map((market: any, index: any) => (
             <div
               key="index"
               className="flex items-center bg-white border border-gray-200 rounded-lg shadow shadow-lg p-3"
@@ -106,7 +102,7 @@ const Home = async () => {
 
       <div className="p-5 min-h-screen">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 ">
-          {news.articles.map((value, key) => (
+          {news.articles.map((value: any, key: any) => (
             <a href={`${value.url}`} target="__blank">
               <div
                 key="index"
@@ -140,7 +136,7 @@ const Home = async () => {
 
       <div className="p-5 min-h-screen">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 ">
-          {techNews.articles.map((value, key) => (
+          {techNews.articles.map((value: any, key: any) => (
             <a href={`${value.url}`} target="__blank">
               <div
                 key="index"
@@ -176,7 +172,7 @@ const Home = async () => {
 
       <div className="p-5 min-h-screen">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 ">
-          {scienceNews.articles.map((value, key) => (
+          {scienceNews.articles.map((value: any, key: any) => (
             <a href={`${value.url}`} target="__blank">
               <div
                 key="index"
