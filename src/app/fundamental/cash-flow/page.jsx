@@ -22,7 +22,7 @@ const BalanceSheet = async () => {
         Annual Report
       </span>
       {data.annualReports.map((value, index) => (
-        <div>
+        <div key={index}>
           <div class="rounded-lg bg-white border border-gray-200 p-6  ">
             <li>
               <strong>Operating Cashflow :</strong> {value.operatingCashflow}
@@ -52,7 +52,7 @@ const BalanceSheet = async () => {
         Quaterly Report
       </span>
       {data.quarterlyReports.map((value, index) => (
-        <div>
+        <div key={index}>
           <div class="rounded-lg bg-white border border-gray-200 p-6  ">
             <li>
               <strong>Operating Cashflow :</strong> {value.operatingCashflow}

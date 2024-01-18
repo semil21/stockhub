@@ -1,4 +1,3 @@
-import { resourceLimits } from 'worker_threads';
 import React from 'react';
 
 const fetchCompanyOverview = async () => {
@@ -21,7 +20,7 @@ const CompanyOverview = async () => {
       </span>
 
       {Object.entries(data).map(([key, value]) => (
-        <div>
+        <div key={key}>
           <div class="rounded-lg bg-white border border-gray-200 p-6  ">
             <li key={key}>
               <strong>{key}:</strong> {value}

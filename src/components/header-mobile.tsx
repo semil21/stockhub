@@ -15,6 +15,10 @@ type MenuItemWithSubMenuProps = {
   toggleOpen: () => void;
 };
 
+interface MenuToggleProps {
+  toggle: () => void;
+}
+
 const sidebar = {
   open: (height = 1000) => ({
     clipPath: `circle(${height * 2 + 200}px at 100% 0)`,
@@ -92,7 +96,7 @@ const HeaderMobile = () => {
 };
 
 export default HeaderMobile;
-
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const MenuToggle = ({ toggle }: { toggle: any }) => (
   <button
     onClick={toggle}

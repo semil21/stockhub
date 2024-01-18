@@ -1,9 +1,6 @@
 'use client';
 
-import { json } from 'stream/consumers';
-import React, { useEffect, useState } from 'react';
-
-import { isConstructorDeclaration } from 'typescript';
+import React, { useState } from 'react';
 
 function SearchPage() {
   const [searchStock, setSearchStock] = useState();
