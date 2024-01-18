@@ -1,3 +1,4 @@
+import { resourceLimits } from 'worker_threads';
 import React from 'react';
 
 const fetchCompanyOverview = async () => {
@@ -11,6 +12,7 @@ const fetchCompanyOverview = async () => {
 
 const CompanyOverview = async () => {
   const data = await fetchCompanyOverview();
+  console.log('data', data);
 
   return (
     <>

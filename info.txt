@@ -9,6 +9,8 @@
 news api https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=fbc19217baa34606ac37889ca5fe55ee
 
 news api key - fbc19217baa34606ac37889ca5fe55ee
+alpha vantage api key - BPDE8EXUXQFR6GWH
+
 
  1 - Alpha Vantage : 25 req a day
 2 - Marketstack : 1000 req a month

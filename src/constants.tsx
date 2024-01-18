@@ -1,9 +1,6 @@
 import { Icon } from '@iconify/react';
 
-
-
 import { SideNavItem } from './types';
-
 
 export const SIDENAV_ITEMS: SideNavItem[] = [
   {
@@ -46,18 +43,16 @@ export const SIDENAV_ITEMS: SideNavItem[] = [
     ],
   },
   {
-    title: 'Settings',
-    path: '/settings',
+    title: 'Commodity',
+    path: '/commodity',
     icon: <Icon icon="lucide:settings" width="24" height="24" />,
     submenu: true,
     subMenuItems: [
-      { title: 'Account', path: '/settings/account' },
-      { title: 'Privacy', path: '/settings/privacy' },
+      { title: 'Crude Oil WTI', path: '/commodity/crudeOilWTI' },
+      { title: 'Crude Oil Brent', path: '/commodity/crudeOilBrent' },
+      { title: 'Natural Gas', path: '/commodity/naturalGas' },
+      { title: 'Copper', path: '/commodity/copper' },
+      { title: 'Aluminium', path: '/commodity/aluminium' },
     ],
-  },
-  {
-    title: 'Help',
-    path: '/help',
-    icon: <Icon icon="lucide:help-circle" width="24" height="24" />,
   },
 ];

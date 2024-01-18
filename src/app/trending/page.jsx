@@ -16,7 +16,7 @@ const Trendings = async () => {
       <span className="font-bold text-4xl text-center text-green-500">
         Today's Top Gainers
       </span>
-      <div className="p-5 min-h-screen">
+      <div className="p-5 min-h-5">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {newData?.top_gainers?.slice(0, 8)?.map((value, index) => (
             <div
@@ -30,7 +30,9 @@ const Trendings = async () => {
                   </h2>
                   <p className="text-base">
                     Change Amount :{' '}
-                    <span className="font-semibold text-green-500">{value.change_amount}</span>
+                    <span className="font-semibold text-green-500">
+                      {value.change_amount}
+                    </span>
                   </p>
                   <p className="text-base">
                     Change in Percent :{' '}
@@ -58,7 +60,7 @@ const Trendings = async () => {
       <span className="font-bold text-4xl text-center text-yellow-500">
         Most Actively Traded
       </span>
-      <div className="p-5 min-h-screen">
+      <div className="p-5 min-h">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {newData?.top_gainers?.slice(0, 8)?.map((value, index) => (
             <div
@@ -71,7 +73,9 @@ const Trendings = async () => {
                 </h2>
                 <p className="text-base ">
                   Change Amount :{' '}
-                  <span className="font-semibold text-yellow-500 ">{value.change_amount}</span>
+                  <span className="font-semibold text-yellow-500 ">
+                    {value.change_amount}
+                  </span>
                 </p>
                 <p className="text-base">
                   Change in Percent :{' '}
@@ -108,7 +112,9 @@ const Trendings = async () => {
                 </h2>
                 <p className="text-base">
                   Change Amount :{' '}
-                  <span className="font-semibold text-red-500">{value.change_amount}</span>
+                  <span className="font-semibold text-red-500">
+                    {value.change_amount}
+                  </span>
                 </p>
                 <p className="text-base">
                   Change in Percent :{' '}
