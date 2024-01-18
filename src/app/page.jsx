@@ -49,11 +49,8 @@ const Home = async () => {
 
       <div className="p-5 min-h-screen">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-          {posts.markets.map((market, index) => (
-            <div
-              key={index}
-              className="flex items-center bg-white border border-gray-200 rounded-lg shadow shadow-lg p-3"
-            >
+          {posts.markets.map((market) => (
+            <div className="flex items-center bg-white border border-gray-200 rounded-lg shadow shadow-lg p-3">
               <div className="text-gray-700 flex-grow">
                 <h2 className="text-gray-800 font-bold text-2xl text-center my-1 ">
                   {market.region}
@@ -102,10 +99,9 @@ const Home = async () => {
 
       <div className="p-5 min-h-screen">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 ">
-          {news.articles.map((value, index) => (
+          {news.articles.map((value) => (
             <a href={`${value.url}`} target="__blank">
               <div
-                key={index}
                 className="flex items-center bg-white border border-gray-200 rounded-lg shadow shadow-lg p-3 	"
                 style={{
                   backgroundImage: `linear-gradient(to bottom, rgba(30,34,45,0.6), rgba(30,34,45,0.8)),url(${value.urlToImage})`,
@@ -136,10 +132,9 @@ const Home = async () => {
 
       <div className="p-5 min-h-screen">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 ">
-          {techNews.articles.map((value, index) => (
+          {techNews.articles.map((value) => (
             <a href={`${value.url}`} target="__blank">
               <div
-                key={index}
                 className="flex items-center bg-white border border-gray-200 rounded-lg shadow shadow-lg p-3 	"
                 style={{
                   backgroundImage: `linear-gradient(to bottom, rgba(30,34,45,0.6), rgba(30,34,45,0.8)),url(${value.urlToImage})`,
@@ -172,10 +167,9 @@ const Home = async () => {
 
       <div className="p-5 min-h-screen">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 ">
-          {scienceNews.articles.map((value, index) => (
+          {scienceNews.articles.map((value) => (
             <a href={`${value.url}`} target="__blank">
               <div
-                key={index}
                 className="flex items-center bg-white border border-gray-200 rounded-lg shadow shadow-lg p-3 	"
                 style={{
                   backgroundImage: `linear-gradient(to bottom, rgba(30,34,45,0.6), rgba(30,34,45,0.8)),url(${value.urlToImage})`,
