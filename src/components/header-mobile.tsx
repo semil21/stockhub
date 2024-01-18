@@ -15,9 +15,7 @@ type MenuItemWithSubMenuProps = {
   toggleOpen: () => void;
 };
 
-interface MenuToggleProps {
-  toggle: () => void;
-}
+
 
 const sidebar = {
   open: (height = 1000) => ({
