@@ -123,7 +123,6 @@ const MenuToggle = ({ toggle }: { toggle: any }) => (
   </button>
 );
 
-@typescript-eslint/no-explicit-any
 const Path = (props: any) => (
   <motion.path
     fill="transparent"
