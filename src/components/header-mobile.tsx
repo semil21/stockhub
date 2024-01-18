@@ -15,8 +15,6 @@ type MenuItemWithSubMenuProps = {
   toggleOpen: () => void;
 };
 
-
-
 const sidebar = {
   open: (height = 1000) => ({
     clipPath: `circle(${height * 2 + 200}px at 100% 0)`,
@@ -125,6 +123,7 @@ const MenuToggle = ({ toggle }: { toggle: any }) => (
   </button>
 );
 
+@typescript-eslint/no-explicit-any
 const Path = (props: any) => (
   <motion.path
     fill="transparent"
