@@ -55,14 +55,13 @@ const Home = async () => {
               className="flex items-center bg-white border border-gray-200 rounded-lg shadow shadow-lg p-3"
             >
               <div className="text-gray-700 flex-grow">
-                <h2 className="text-gray-800 font-bold text-2xl text-center my-1 ">
+                <h2 className="text-gray-800 font-bold text-2xl text-center my-1">
                   {market.region}
                 </h2>
                 <p className="text-base">
                   Market Type:{' '}
                   <span className="font-semibold"> {market.market_type} </span>
                 </p>
-
                 <p className="text-base">
                   Current Status:{' '}
                   {market.current_status === 'open' ? (
