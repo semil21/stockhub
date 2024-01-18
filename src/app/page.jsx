@@ -49,19 +49,20 @@ const Home = async () => {
 
       <div className="p-5 min-h-screen">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-          {/* {posts.markets.map((market, index) => (
+          {posts.markets.map((market, index) => (
             <div
               key={index}
               className="flex items-center bg-white border border-gray-200 rounded-lg shadow shadow-lg p-3"
             >
               <div className="text-gray-700 flex-grow">
-                <h2 className="text-gray-800 font-bold text-2xl text-center my-1">
+                <h2 className="text-gray-800 font-bold text-2xl text-center my-1 ">
                   {market.region}
                 </h2>
                 <p className="text-base">
                   Market Type:{' '}
                   <span className="font-semibold"> {market.market_type} </span>
                 </p>
+
                 <p className="text-base">
                   Current Status:{' '}
                   {market.current_status === 'open' ? (
@@ -90,7 +91,7 @@ const Home = async () => {
                 </p>
               </div>
             </div>
-          ))} */}
+          ))}
         </div>
       </div>
 
@@ -101,7 +102,7 @@ const Home = async () => {
 
       <div className="p-5 min-h-screen">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 ">
-          {/* {news.articles.map((value, index) => (
+          {news.articles.map((value, index) => (
             <a href={`${value.url}`} target="__blank" key={index}>
               <div
                 className="flex items-center bg-white border border-gray-200 rounded-lg shadow shadow-lg p-3 	"
@@ -122,7 +123,7 @@ const Home = async () => {
                 </div>
               </div>
             </a>
-          ))} */}
+          ))}
         </div>
       </div>
       {/* ========================= Business  News Section Ends  ========================= */}
@@ -134,7 +135,7 @@ const Home = async () => {
 
       <div className="p-5 min-h-screen">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 ">
-          {/* {techNews.articles.map((value, index) => (
+          {techNews.articles.map((value, index) => (
             <a href={`${value.url}`} target="__blank" key={index}>
               <div
                 className="flex items-center bg-white border border-gray-200 rounded-lg shadow shadow-lg p-3 	"
@@ -145,6 +146,9 @@ const Home = async () => {
                 }}
               >
                 <div className="text-gray-700 flex-grow">
+                  {/* <h2 className="text-gray-800 font-bold text-2xl text-center my-1 ">
+                    {market.region}
+                  </h2> */}
                   <p className="text-base">
                     <span className="font-bold text-white">
                       {value.title.substring(0, 95)}
@@ -154,7 +158,7 @@ const Home = async () => {
                 </div>
               </div>
             </a>
-          ))} */}
+          ))}
         </div>
       </div>
       {/* ========================= Technology News Section ends  ========================= */}
@@ -166,7 +170,7 @@ const Home = async () => {
 
       <div className="p-5 min-h-screen">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 ">
-          {/* {scienceNews.articles.map((value, index) => (
+          {scienceNews.articles.map((value, index) => (
             <a href={`${value.url}`} target="__blank" key={index}>
               <div
                 className="flex items-center bg-white border border-gray-200 rounded-lg shadow shadow-lg p-3 	"
@@ -187,7 +191,7 @@ const Home = async () => {
                 </div>
               </div>
             </a>
-          ))} */}
+          ))}
         </div>
       </div>
       {/* ========================= Science  Section ends  ========================= */}
